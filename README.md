@@ -17,10 +17,6 @@ This project demonstrates a "Hardware-in-the-Loop" setup using MATLAB and an Ard
 * 2x LEDs (with appropriate current-limiting resistors)
 * Jumper wires & Breadboard
 
-## 💻Software Requirements
-* MATLAB (R2014a or later recommended)
-* [MATLAB Support Package for Arduino Hardware](https://www.mathworks.com/hardware-support/arduino-matlab.html)
-
 ##  Circuit Setup
 1. **Sensor:** Connect the LDR voltage divider output to Arduino Analog Pin **A0**.
 2. **Indicators:** Connect the two LEDs to Digital Pins **D5** and **D7**.
