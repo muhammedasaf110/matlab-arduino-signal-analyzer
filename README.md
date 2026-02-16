@@ -1,18 +1,18 @@
 # MATLAB-Arduino Data Acquisition and Signal Processing
 
 ##  Project Overview
-This project demonstrates a "Hardware-in-the-Loop" setup using MATLAB and an Arduino. It captures real-time analog voltage data from a Light Dependent Resistor (LDR), calculates the actual sampling frequency, and performs digital signal processing (DSP) to analyze the frequency components of the captured signal using a Fast Fourier Transform (FFT).
+This project demonstrates a "Hardware-in-the-Loop" setup using MATLAB and an Arduino. It captures real-time analog voltage data from a light dependent resistor, calculates the actual sampling frequency, and analyzes the frequency components of the captured signal using a Fast Fourier Transform.
 
 ##  Features
 * **Real-Time Data Acquisition:** Interfaces MATLAB directly with Arduino over USB to log sensor data.
 * **Hardware Control:** Actively controls external hardware (LEDs) based on the measurement state.
 * **Dynamic Sampling Calculation:** Automatically calculates the true sampling frequency ($f_s$) based on execution time and sample count.
 * **Time-Domain Analysis:** Plots the raw voltage signal over time.
-* **Frequency-Domain Analysis:** Computes and plots a Frequency Spectrum (FFT)
+* **Frequency-Domain Analysis:** Computes and plots a Frequency Spectrum
 
 ##  Hardware Requirements
 * Arduino (Uno, Mega, Nano, etc.)
-* 1x Light Dependent Resistor (LDR)
+* 1x Light Dependent Resistor
 * 1x Pull-down/Pull-up Resistor (e.g., 10kΩ) for the LDR voltage divider
 * 2x LEDs (with appropriate current-limiting resistors)
 * Jumper wires & Breadboard
@@ -20,7 +20,6 @@ This project demonstrates a "Hardware-in-the-Loop" setup using MATLAB and an Ard
 ##  Circuit Setup
 1. **Sensor:** Connect the LDR voltage divider output to Arduino Analog Pin **A0**.
 2. **Indicators:** Connect the two LEDs to Digital Pins **D5** and **D7**.
-3. **Power:** Ensure the circuit shares a common Ground (GND) with the Arduino.
 
 
 ##  Results
